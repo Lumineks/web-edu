@@ -17,6 +17,7 @@
     func.call(context, arg1, arg2, ...argN);
     func.apply(context, args);
 `args` у прикладі з методом apply - це [псевдомасив](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections#working_with_array-like_objects)
+
 Робота методу `bind` відрізяється - функція **НЕ** викликається, проте створюється нова, до якої на постійній основі прив'язується вказане значення `this`. Аргументи передаються аналогічно методу `call` окремо:
 
     const foo = func.bind(context, arg1, arg2, ...argN);
