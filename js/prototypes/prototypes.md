@@ -72,3 +72,9 @@
 - Властивість `prototype` у функцій конструкторів була від самого початку, це найстаріший спосіб створити об'єкт з кастомним **прототипом**.
 - Далі десь в проміжку між 2009 і 2015 роками з'явився метод `Object.create`. Він дозволяє створити об'єкт з вказаним **прототипом**. Однак не надає можливості його отримати або змінити. Отже в браузерах імплементували властивість `__proto__` для більш зручної роботи з прототипами, проте ця поведінка не була стандартизованою.
 - З виходом ES6 в 2015 році були додані методи `Object.getPrototypeOf` та `Object.setPrototypeOf`, що виконували однакову функцію як з `__proto__`. З цього часу це актуальні способи взаємодії з **прототипами**. В той час як `__proto__` досі можна використовувати, він не є стандартом і його підтримка не гарантується, з-за цих причин і варто його уникати.
+
+**Ресурси:**
+- https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects/Object_prototypes
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf
+- https://javascript.info/prototype-methods
